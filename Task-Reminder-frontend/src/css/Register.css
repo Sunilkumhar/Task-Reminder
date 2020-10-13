@@ -1,0 +1,61 @@
+.registerpage .errormsg {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 25%;
+}
+.errormsg {
+  margin-left: 0px;
+  padding-left: 0px;
+  border: #111111 1px solid;
+  /* width: 30%; */
+  background-color: rgb(219, 33, 33);
+}
+.errormsg p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+.errormsg .remove {
+  padding-left: 35px;
+  cursor: pointer;
+}
+.register .container1 {
+  width: 50%;
+  margin: auto;
+  margin-top: 1%;
+  padding: 2%;
+  background: rgb(231, 226, 226);
+}
+.register .container1 .row1 {
+  width: 40%;
+}
+.register .container1 .passwordregister {
+  display: flex;
+}
+.register .container1 .passwordregister .eyeR {
+  position: relative;
+  right: 30px;
+  margin-top: 8px;
+}
+
+.register .container1 #register1 {
+  width: 300px;
+}
+#register1 {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 16px;
+  transition: all 0.2s;
+  background-color: rgb(104, 104, 250);
+  letter-spacing: 1.5px;
+  width: 280px;
+}
+
+#register1:hover {
+  background-color: #2623f3;
+  color: #fbf5f3;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 10px #1a1919;
+}

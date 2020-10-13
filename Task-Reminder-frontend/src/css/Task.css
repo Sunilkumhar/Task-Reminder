@@ -1,0 +1,44 @@
+.task1 {
+  border: 2px solid black;
+  margin: 5px;
+  /* width: 100%; */
+}
+.task1 .heading {
+  display: flex;
+}
+.task1 .topic p {
+  margin-left: 3px;
+  font-size: 25px;
+}
+.task1 .topic {
+  display: flex;
+}
+.task1 .topic h4 {
+  padding-top: 4px;
+}
+.task1 .agenda {
+  display: flex;
+}
+
+#delete {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 16px;
+  transition: all 0.2s;
+  background-color: rgb(231, 77, 15);
+  letter-spacing: 1.5px;
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  right: 0;
+  bottom: -2px;
+}
+
+#delete:hover {
+  background-color: #f10b0b;
+  color: #fbf5f3;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 10px #1a1919;
+}

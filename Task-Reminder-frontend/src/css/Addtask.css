@@ -1,0 +1,21 @@
+.register .container1 .head {
+  width: 400px;
+}
+
+#add {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 16px;
+  transition: all 0.2s;
+  background-color: rgb(104, 104, 250);
+  letter-spacing: 1.5px;
+  width: 280px;
+}
+
+#add:hover {
+  background-color: #2623f3;
+  color: #fbf5f3;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 10px #1a1919;
+}

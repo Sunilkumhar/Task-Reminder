@@ -1,0 +1,77 @@
+.loginpage {
+  padding-top: 10%;
+  padding-left: 40%;
+}
+.error {
+  margin-left: 0px;
+  padding-left: 0px;
+  border: #111111 1px solid;
+  width: 25%;
+  background-color: rgb(219, 33, 33);
+}
+.error p {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.error .remove {
+  cursor: pointer;
+}
+.login {
+  padding-left: 3%;
+}
+.login .container1 {
+  width: 250px;
+  background: rgb(255, 255, 255);
+}
+
+.login .container1 #email {
+  width: 250px !important;
+  height: 15px;
+}
+.login .container1 .passwordfield {
+  display: flex;
+}
+.login .container1 .passwordfield .eye {
+  position: relative;
+  right: 30px;
+  margin-top: 30px;
+}
+.login .container1 #password {
+  width: 250px !important;
+  height: 15px;
+}
+.login .container1 .signup {
+  display: flex;
+}
+.login .container1 .signup p {
+  margin-right: 10px;
+  margin-top: 7px;
+}
+#proceed {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 16px;
+  transition: all 0.2s;
+  background-color: rgb(104, 104, 250);
+  letter-spacing: 1.5px;
+  width: 280px;
+}
+
+#proceed:hover {
+  background-color: #2623f3;
+  color: #fbf5f3;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 10px #1a1919;
+}
+#proceed:active {
+  background-color: rgba(63, 243, 46, 0.822);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #111111;
+}
+.container1 .form-group label {
+  font-size: 25px;
+}

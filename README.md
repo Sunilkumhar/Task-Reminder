@@ -2,7 +2,7 @@
 A Complete Task-Reminder Web App
 
 ### Tech-Stack
-- Frony-End
+- Front-End
   - Reactjs
   - Material UI
   

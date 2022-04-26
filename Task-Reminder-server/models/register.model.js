@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const Addtask = require("./task.model");
 require("dotenv").config();
-const regexForEmailValidation = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+const regexForEmailValidation =
+  /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
 const Schema = mongoose.Schema;
 
@@ -12,7 +13,6 @@ const registerSchema = new Schema(
       type: String,
       required: [true, "Name required"],
       trim: true,
-      minlength: 3,
     },
     email: {
       type: String,

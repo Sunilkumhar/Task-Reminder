@@ -15,7 +15,7 @@ router.get("/all", (req, res) => {
     .catch((err) => res.status(400).json("Erro: " + err));
 });
 
-router.get("/:id",  async (req, res) => {
+router.get("/:id", async (req, res) => {
   const user = await Register.findById(req.params.id).select("tasks");
   res.send(user);
 });
@@ -33,7 +33,7 @@ router.post("/", async (req, res) => {
   user = new Register({ name, email, pass, phone, tasks });
   const salt = await bcrypt.genSalt(10);
   user.pass = await bcrypt.hash(pass, salt);
-
+  console.log("Encrypted Hashed password :- " + user.pass);
   user.save();
 
   const token = user.generateAuthToken();

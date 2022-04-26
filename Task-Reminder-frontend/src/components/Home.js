@@ -9,28 +9,24 @@ function Home() {
   const [name, setname] = useState("");
   const [task, settask] = useState([]);
   useEffect(() => {
-
     axios
       .get(`http://localhost:5000/register/${localStorage.getItem("id")}`)
       .then((res) => {
-        settask(res.data.tasks)
+        settask(res.data.tasks);
       })
       .catch((err) => {
         console.log(err.status);
       });
-
   }, []);
   useEffect(() => {
-
     axios
       .get(`http://localhost:5000/register/${localStorage.getItem("id")}`)
       .then((res) => {
-        settask(res.data.tasks)
+        settask(res.data.tasks);
       })
       .catch((err) => {
         console.log(err.status);
       });
-
   }, [task]);
 
   useEffect(() => {
@@ -43,7 +39,6 @@ function Home() {
     } catch {}
   }, []);
 
-
   return (
     <div>
       {name !== "" ? (
@@ -51,21 +46,21 @@ function Home() {
           <Nav name={name} />
           <div className="task taskcontainer">
             <div className="row">
-              {
-                task.length === 0 ? (
-                  <h1>You Have No Pending Tasks...</h1>
-                ):(
+              {task.length !== undefined || task.length !== 0 ? (
                 task.map((x) => (
-                <div className="col-6" key = {x._id}>
-                  <Task
-                    name={x.name}
-                    currDate={x.currDate.substring(0,10)}
-                    dueDate={x.dueDate.substring(0,10)}
-                    about={x.about} 
-                    _id = {x._id}
-                  />
-                </div>
-              )))}
+                  <div className="col-6" key={x._id}>
+                    <Task
+                      name={x.name}
+                      currDate={x.currDate.substring(0, 10)}
+                      dueDate={x.dueDate.substring(0, 10)}
+                      about={x.about}
+                      _id={x._id}
+                    />
+                  </div>
+                ))
+              ) : (
+                <h1>You Have No Pending Tasks...</h1>
+              )}
             </div>
           </div>
         </React.Fragment>
